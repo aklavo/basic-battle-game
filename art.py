@@ -1,6 +1,6 @@
-def display_bender_art(dragon,moon,badger_mole,bison):
+def display_bender_art():
     print("Choose from the four orginal Benders:")
-    print(dragon.name+":")
+    print("Dragon:")
     print(r"""  
                 __        _      
               _/  \    _(\(o     
@@ -14,7 +14,7 @@ def display_bender_art(dragon,moon,badger_mole,bison):
         \ ^^--^^ __-^ /(__       
          ^^----^^    "^--v'
           """)
-    print(moon.name+":")
+    print("Moon:")
     print(r"""
         ___---___                    
       .--         --.      
@@ -32,7 +32,7 @@ def display_bender_art(dragon,moon,badger_mole,bison):
       `--___   ___--'
             ---
           """)
-    print(badger_mole.name+":")
+    print("Badger Mole:")
     print(r"""
                  ___,,___
            _,-='=- =-  -`"--.__,,.._
@@ -47,7 +47,7 @@ def display_bender_art(dragon,moon,badger_mole,bison):
                                 `"QMM`.
                                    `>>>
           """)
-    print(bison.name+":")
+    print("Sky Bison:")
     print(r"""
             _.-````'-,_
    _,.,_ ,-'`           `'-.,_

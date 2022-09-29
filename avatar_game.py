@@ -1,27 +1,38 @@
-from bender import bender
+from bender import Bender
+from battle import Battle
+import art
+import random
+from prettytable import PrettyTable
+
+def create_battlers():
+    benders = [
+        Bender("Dragon",3,4,5,"Fire"),
+        Bender("Moon",5,3,3,"Water"),
+        Bender("Badger Mole",4,5,1,"Earth"),
+        Bender("Sky Bison",5,1,4,"Air")
+    ]
+    return benders
 
 def avatar_game():
-    elements = ['fire','water','earth','air']
+    # Create benders
+    benders = create_battlers()
     
-    # Create 4 benders
-    benders = [
-        bender("Dragon",3,4,5,elements[0],True),
-        bender("Moon",5,2,1,elements[1],True),
-        bender("Badger Mole",4,5,3,elements[2],True),
-        bender("Sky Bison",3,5,5,elements[3],True)
-    ]
-    dragon = benders[0]
-    moon = benders[1]
-    badger_mole = benders[2]
-    bison = benders[3]
+    print("-"*50+ "\nWelcome to the Avatar Battler!\n"+ "-"*50)
+    art.display_bender_art()
+    stat_table = PrettyTable(['Bender', 'Element', 'Health', 'Attack', 'Speed'])
+    for b in benders:
+        stat_table.add_row([b.name, b.element, b.health, b.attack, b.speed])
+    print(stat_table)
 
-    # Begin Game
-    print("-"*150)
-    print("Welcome to the Avatar Battler!")
-    print("-"*150)
-    
-    
+    player_bender = benders[int(input("Choose a Bender [0=Dragon, 1=Moon, 2=Badger Mole, 3=Sky Bison]: "))]
+    computer_bender = benders[random.randint(0,3)]
+    print("Computer chooses: "+computer_bender.name+"\n")
+    # Create Battle
+    b = Battle([player_bender, computer_bender])
 
+    print(b)
+    b.battle_animation()
+    b.battle()
 
 if __name__ == "__main__":
     avatar_game()
