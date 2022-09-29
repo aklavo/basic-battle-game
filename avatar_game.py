@@ -15,5 +15,13 @@ def avatar_game():
     badger_mole = benders[2]
     bison = benders[3]
 
+    # Begin Game
+    print("-"*150)
+    print("Welcome to the Avatar Battler!")
+    print("-"*150)
+    
+    
+
+
 if __name__ == "__main__":
     avatar_game()
