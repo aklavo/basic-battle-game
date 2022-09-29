@@ -1,2 +1,2 @@
-# basic-super-auto-pets
-A simple console based super auto pets
+# basic-battle-game
+A simple console based battle game based on Avatar The Last Air Bender.
