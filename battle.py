@@ -29,8 +29,9 @@ class Battle():
         while self.benders[0].health > 0 and self.benders[1].health > 0:
             self.benders[0].health -= self.benders[1].attack 
             self.benders[1].health -= self.benders[0].attack 
-            print(self.benders[0].name+" health = "+str(self.benders[0].health))
-            print(self.benders[1].name+" health = "+str(self.benders[1].health))
+            self.battle_animation()
+            print("\n\n"+self.benders[0].name+" health = "+str(self.benders[0].health))
+            print(self.benders[1].name+" health = "+str(self.benders[1].health)+"\n")
         
         if self.benders[0].health <= 0 and self.benders[1].health <= 0:
             print("Tie!")

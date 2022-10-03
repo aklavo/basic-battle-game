@@ -43,7 +43,7 @@ def display_bender_art():
   ,' - / /        / /\ =  - /MM(,,._`YQMML  `|
  <_,=^Kkm / / / / ///H|wnWWdMKKK#""-;. `"0\  |
         `""QkmmmmmnWMMM\""WHMKKMM\   `--. \> \
- hjm          `""'  `->>>    ``WHMb,.    `-_<@)
+              `""'  `->>>    ``WHMb,.    `-_<@)
                                 `"QMM`.
                                    `>>>
           """)

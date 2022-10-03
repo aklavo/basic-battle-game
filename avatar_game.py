@@ -31,7 +31,6 @@ def avatar_game():
     b = Battle([player_bender, computer_bender])
 
     print(b)
-    b.battle_animation()
     b.battle()
 
 if __name__ == "__main__":
